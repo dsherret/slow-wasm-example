@@ -1,0 +1,10 @@
+[package]
+name = "wasmtime-app"
+version = "0.1.0"
+authors = ["David Sherret <dsherret@gmail.com>"]
+edition = "2018"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+wasmtime = "0.26.0"
