@@ -1,0 +1,14 @@
+[package]
+name = "formatter"
+version = "0.1.0"
+authors = ["David Sherret <dsherret@gmail.com>"]
+edition = "2018"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[lib]
+crate-type = ["lib", "cdylib"]
+
+[dependencies]
+dprint-core = { version = "0.38.0", features = ["formatting", "wasm"] }
+dprint-plugin-json = { version = "0.10.2" }
