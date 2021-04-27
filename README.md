@@ -1,3 +1,5 @@
+On a Windows machine (works fine on Linux and Mac):
+
 1. Build the .wasm file by running `./build.sh`.
 3. `cd native-app && cargo run --release` - Note the time it takes.
 2. `cd wasmer-app && cargo run --release` - Note the time it takes.
