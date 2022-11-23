@@ -1,0 +1,8 @@
+[package]
+name = "app"
+version = "0.1.0"
+authors = ["david"]
+edition = "2021"
+
+[dependencies]
+wasmer = "2.3.0"
