@@ -15,7 +15,7 @@ fn main() {
             threads.push(std::thread::spawn(move || {
                 let mut store = Store::new(&engine, 4);
                 let instance = Instance::new(&mut store, &module, &[]).unwrap();
-                let format = instance.get_typed_func::<(), u32, _>(&mut store, "format").unwrap();
+                let format = instance.get_typed_func::<(), u32>(&mut store, "format").unwrap();
                 let result = format.call(&mut store, ()).unwrap();
                 (engine, store, module, instance, result)
             }));
